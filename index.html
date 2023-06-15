@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Scrap 3</title>
+</head>
+<body>
+    <div id="barrel_1" onclick="scrapgain()"><img src="images/barrel1.webp" id="barrel1"></div>
+    <div id="scrap_gain"><img src="images/barrel1.webp" id="barrel1_1"> 0 </div>
+    <div id="magnets"><img src="images/magnets.webp" id="magnet-image" onclick="magnetGain()"> 0 </div>
+    <div id="level-bar"> Level 1 
+        <div id="leveling-bar"></div>
+    </div>
+    <div id="leveling-barrel"><img src="images/barrel1.webp" id="leveling_barrel1" onclick="levelgain()"></div>
+    <div class="collection-prestige-upgrades">
+        <div id="collection"><img src="images/barrel-collections.jpg" id="collection-of-barrels"></div>
+        <div id="prestige"><img src="images/golden-barrel-content.png" id="prestige-container" onclick="prestige_containertoggle()"> 
+            <div class="golden-scrap" id="golden-scrap"> Prestige
+                <span id="x-close" onclick="golden_scrapclicked()"> X </span>
+                <div id="golden-scrap-prestige"><img src="images/golden-scrap.webp" id="prestige-golden-scrap" onclick="golden_scrap_toggle()"></div>
+                <div id="stars-scrap-prestige"><img src="images/stars-icon.webp" id="prestige-scrap-stars">
+                </div>
+                <div id="golden-scrap-text"><img src="images/golden-scrap.webp" id="golden-scrap-img">Golden Scrap
+                <div id="paragraph-golden-scrap-text"> 0 </div>
+                </div>
+                <div id="prestige-button" onclick="golden_scrapGain()">Prestige</div>
+            </div>
+            <div id="stars-prestige"><img src="images/stars-icon.webp" class="prestige-stars" id="prestige-stars" onclick="stars_toggle()">
+                <div id="stars-text"></div>
+            </div>
+        </div>
+        <div id="barrel-upgrades"><img src="images/barrel-upgrades1.jpg" id="barrel-upgrades-container" onclick="open_barrelUpgrades()">
+            <div class="upgrades-barrel" id="upgrades-barrel">
+            <span id="x-close" onclick="close_barrelUpgrades()"> X </span>
+            <div id="upgrades-text"> Upgrades </div>
+            <div id="first-barrel-up"><img src="images/barrel1.webp" id="first-barrel-up1">
+            <div id="first-row-up-text"> Upgrade 1 </div>
+            <div id="second-row-up-text">Get a 2x boost(additive) to your scrap gain</div>
+            <div id="first-up-btn" onclick="first_upgrade()"> Buy upgrade 1 </div>
+            </div>
+            <div id="second-barrel-up"><img src="images/auto_clicker.webp" id="second-barrel-up1">
+                <div id="first-row-up-second-text"> Upgrade 2 </div>
+                <div id="second-row-up-second-text"> Get a autoclicker interval beetwen clicks is 0.5 seconds </div>
+                <div id="second-up-btn"> Buy upgrade 2 </div>
+            </div>
+            </div>
+        </div>
+        <div id="about"><img src="images/about.png" id="about-sections"></div>
+    </div>
+    <button onclick="setItem()" id="btn-save"> SAVE </button>
+    <audio controls>
+        <source src="media/_We_Are_the_Danger_A_Minecraft_Original_Music_V.mp3">
+    </audio>
+</body onload="getItem()">
+<script src="index.js"></script>
+</html>
